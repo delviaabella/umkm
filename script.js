@@ -1,8 +1,17 @@
 // TODO: ganti dengan produk UMKM kalian. Gambar boleh dikosongkan dulu.
 const produk = [
-    { nama: 'Produk pertama', harga: 15000, keterangan: 'Keterangan singkat produk.' },
-    { nama: 'Produk kedua', harga: 20000, keterangan: 'Keterangan singkat produk.' },
-    { nama: 'Produk ketiga', harga: 25000, keterangan: 'Keterangan singkat produk.' },
+    { nama: 'Tteokbokki', harga: 25000, keterangan: 'Keterangan singkat produk.' },
+    { nama: 'Kimbap', harga: 22000, keterangan: 'Keterangan singkat produk.' },
+    { nama: 'Korean Fried Chicken', harga: 35000, keterangan: 'Keterangan singkat produk.' },
+    { nama: 'Korean Corn Dog', harga: 20000, keterangan: 'Keterangan singkat produk.' },
+    { nama: 'Ramyeon', harga: 25000, keterangan: 'Keterangan singkat produk.' },
+    { nama: 'Mandu', harga: 22000, keterangan: 'Keterangan singkat produk.' },
+    { nama: 'Bulgogi', harga: 40000, keterangan: 'Keterangan singkat produk.' },
+    { nama: 'Bibimbap', harga: 35000, keterangan: 'Keterangan singkat produk.' },
+    { nama: 'Japchae', harga: 28000, keterangan: 'Keterangan singkat produk.' },
+    { nama: 'Odeng', harga: 18000, keterangan: 'Keterangan singkat produk.' },
+    { nama: 'Hotteok', harga: 15000, keterangan: 'Keterangan singkat produk.' },
+    { nama: 'Kimchi Jjigae', harga: 32000, keterangan: 'Keterangan singkat produk.' },
 ];
 
 // TODO: sesuaikan jam buka (format 24 jam)

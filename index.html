@@ -3,14 +3,14 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Nama Usaha</title>
+    <title>Oppa Bites</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header class="atas">
         <div class="wadah">
             <!-- TODO: ganti dengan nama UMKM yang kalian pilih -->
-            <a href="#" class="merek">Nama Usaha</a>
+            <a href="#" class="merek">Oppa Bites</a>
             <nav>
                 <a href="#tentang">Tentang</a>
                 <a href="#produk">Produk</a>
@@ -21,14 +21,15 @@
 
     <main class="wadah">
         <section class="hero">
-            <h1>Nama Usaha</h1>
-            <p>Slogan singkat usaha, misalnya "Keripik singkong renyah sejak 2010".</p>
+            <h1>Oppa Bites</h1>
+            <p>Oppa Bites, renyahnya bikin nagih!</p>
+            <p>Sekali coba, selalu ingin lagi!</p>
             <p>Status: <strong id="status-buka">-</strong></p>
         </section>
 
         <section id="tentang">
             <h2>Tentang Kami</h2>
-            <p>Cerita singkat usaha: siapa pemiliknya, kapan mulai, apa yang membuat produknya berbeda.</p>
+            <p>Oppa Bites menghadirkan camilan lezat dan renyah yang cocok dinikmati kapan saja. Kami berkomitmen menyajikan cita rasa yang istimewa agar setiap gigitan menjadi momen yang menyenangkan.</p>
         </section>
 
         <section id="produk">
@@ -51,5 +52,27 @@
     </footer>
 
     <script src="script.js"></script>
+    <script>
+        const statusBuka = document.getElementById('status-buka');
+
+        function perbaruiStatusBuka() {
+            const waktu = new Intl.DateTimeFormat('id-ID', {
+                timeZone: 'Asia/Jakarta',
+                hour: '2-digit',
+                minute: '2-digit',
+                hourCycle: 'h23'
+            }).formatToParts(new Date());
+            const jam = Number(waktu.find(bagian => bagian.type === 'hour').value);
+            const menit = Number(waktu.find(bagian => bagian.type === 'minute').value);
+            const totalMenit = jam * 60 + menit;
+            const sedangBuka = totalMenit >= 8 * 60 && totalMenit < 17 * 60;
+
+            statusBuka.textContent = sedangBuka ? 'Buka sekarang' : 'Sedang tutup';
+            statusBuka.className = sedangBuka ? 'buka' : 'tutup';
+        }
+
+        perbaruiStatusBuka();
+        setInterval(perbaruiStatusBuka, 1000);
+    </script>
 </body>
 </html>
