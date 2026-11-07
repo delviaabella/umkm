@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="id">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Nama Usaha</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="atas">
+        <div class="wadah">
+            <!-- TODO: ganti dengan nama UMKM yang kalian pilih -->
+            <a href="#" class="merek">Korean Food</a>
+            <nav>
+                <a href="#tentang">Tentang</a>
+                <a href="#produk">Produk</a>
+                <a href="#kontak">Kontak</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="wadah">
+        <section class="hero">
+            <h1>Korean Food</h1>
+            <p>SNikmati cita rasa autentik makanan Korea dalam setiap sajian.</p>
+            <p>Status: <strong id="status-buka">-</strong></p>
+        </section>
+
+        <section class="info-kontak"aria-labelledby="profil-usaha">
+            <h2 id="profil-usaha">EcoK-Bites — Korean Street Food Eco-Friendly</h2>
+            <p>Sajian kuliner Korea autentik dalam kemasan ramah lingkungan.</p>
+            <div class="info-item">
+                <strong>Lokasi:</strong> Jl. Pondok Indah No. 12
+            </div>
+            <div class="info-item">
+                <strong>Kontak:</strong> 088223279319 (Bella)
+            </div>
+            <div class="info-item">
+                <strong>Jam Buka:</strong> 08.00 s.d. 21.00 WIB
+            </div>
+        </section>
+
+        <section id="tentang">
+            <h2>Tentang Kami</h2>
+            <p>KoreanFood menyajikan aneka makanan Korea yang lezat dan autentik. Kami menggunakan bahan pilihan dan mengolah setiap menu dengan cita rasa khas Korea agar pelanggan dapat menikmati pengalaman kuliner Korea yang autentik dan berkualitas.</p>
+        </section>
+
+        <section id="produk">
+            <h2>Produk</h2>
+            <!-- Kartu produk diisi oleh script.js -->
+            <div id="daftar-produk" class="grid">
+    
+            </div>
+            
+        </section>
+
+        <section id="menu-korea">
+            <h2>Menu Korean Street Food</h2>
+            <div class="grid-produk">p>
+                <article class="kartu-produk product-card" data-product-id="p1" data-price="25000" data-poin="10">
+                    <img class="gambar-produk" data-img-track="P1-IMG" src="images/p1.jpg" alt="Tteokbokki Cheese Eco-Box">
+                    <h3>Tteokbokki Cheese Eco-Box</h3>
+                    <p>Tteokbokki kenyal dengan saus pedas manis dan lelehan keju, disajikan dalam kemasan ramah lingkungan.</p>
+                    <p class="harga">Rp 25.000</p>
+                    <span class="badge-poin">+10 Poin</span>
+                </article>
+
+                <article class="kartu-produk product-card" data-product-id="p2" data-price="20000" data-poin="8">
+                    <img class="gambar-produk" data-img-track="P2-IMG" src="images/p2.jpg" alt="Kimbap Ayam Teriyaki">
+                    <h3>Kimbap Ayam Teriyaki</h3>
+                    <p>Nasi dan sayuran segar dengan ayam teriyaki, digulung dalam rumput laut.</p>
+                    <p class="harga">Rp 20.000</p>
+                    <span class="badge-poin">+8 Poin</span>
+                </article>
+
+                <article class="kartu-produk product-card" data-product-id="p3" data-price="28000" data-poin="12">
+                    <img class="gambar-produk" data-img-track="P3-IMG" src="images/p3.jpg" alt="Yangnyeom Korean Chicken">
+                    <h3>Yangnyeom Korean Chicken</h3>
+                    <p>Ayam renyah berbalut saus Korea pedas manis dengan taburan wijen.</p>
+                    <p class="harga">Rp 28.000</p>
+                    <span class="badge-poin">+12 Poin</span>
+                </article>
+
+                <article class="kartu-produk product-card" data-product-id="p4" data-price="27000" data-poin="10">
+                    <img class="gambar-produk" data-img-track="P4-IMG" src="images/p4.jpg" alt="Jajangmyeon Eco-Bowl">
+                    <h3>Jajangmyeon Eco-Bowl</h3>
+                    <p mi="false">Mi Korea dengan saus kacang hitam gurih, disajikan dalam mangkuk ramah lingkungan.</p>
+                    <p class="harga">Rp 27.000</p>
+                    <span class="badge-poin">+10 Poin</span>
+                </article>
+
+                <article class="kartu-produk product-card" data-product-id="p5" data-price="18000" data-poin="5">
+                    <img class="gambar-produk" data-img-track="P5-IMG" src="images/p5.jpg" alt="Corn Dog Mozzarella Sausage">
+                    <h3>Corn Dog Mozzarella Sausage</h3>
+                    <p>Sosis dan mozzarella berlapis adonan renyah, cocok untuk camilan.</p>
+                    <p class="harga">Rp 18.000</p>
+                    <span class="badge-poin">+5 Poin</span>
+                </article>
+
+                <article class="kartu-produk product-card" data-product-id="p6" data-price="22000" data-poin="8">
+                    <img class="gambar-produk" data-img-track="P6-IMG" src="images/p6.jpg" alt="Mandu Ayam">
+                    <h3>Mandu Ayam</h3>
+                    <p>Pangsit Korea berisi ayam dan sayuran, dikukus hingga lembut.</p>
+                    <p class="harga">Rp 22.000</p>
+                    <span class="badge-poin">+8 Poin</span>
+                </article>
+
+                <article class="kartu-produk product-card" data-product-id="p7" data-price="30000" data-poin="12">
+                    <img class="gambar-produk" data-img-track="P7-IMG" src="images/p7.jpg" alt="Bulgogi Rice Bowl">
+                    <h3>Bulgogi Rice Bowl</h3>
+                    <p>Nasi hangat dengan irisan daging bulgogi berbumbu dan sayuran.</p>
+                    <p class="harga">Rp 30.000</p>
+                    <span class="badge-poin">+12 Poin</span>
+                </article>
+
+                <article class="kartu-produk product-card" data-product-id="p8" data-price="15000" data-poin="5">
+                    <img class="gambar-produk" data-img-track="P8-IMG" src="images/p8.jpg" alt="Hotteok Gula Kayu Manis">
+                    <h3>Hotteok Gula Kayu Manis</h3>
+                    <p>Pancake Korea hangat dengan isian gula dan kayu manis.</p>
+                    <p class="harga">Rp 15.000</p>
+                    <span class="badge-poin">+5 Poin</span>
+                </article>
+
+                <article class="kartu-produk product-card" data-product-id="p9" data-price="16000" data-poin="5">
+                    <img class="gambar-produk" data-img-track="P9-IMG" src="images/p9.jpg" alt="Eomuk Kuah">
+                    <h3>Eomuk Kuah</h3>
+                    <p>Odeng Korea dalam kuah hangat yang gurih dan ringan.</p>
+                    <p class="harga">Rp 16.000</p>
+                    <span class="badge-poin">+5 Poin</span>
+                </article>
+
+                <article class="kartu-produk product-card" data-product-id="p10" data-price="24000" data-poin="8">
+                    <img class="gambar-produk" data-img-track="P10-IMG" src="images/p10.jpg" alt="Ramyeon Kimchi">
+                    <h3>Ramyeon Kimchi</h3>
+                    <p>Mi kuah Korea dengan kimchi, sayuran, dan cita rasa pedas gurih.</p>
+                    <p class="harga">Rp 24.000</p>
+                    <span class="badge-poin">+8 Poin</span>
+                </article>
+            </div>
+        </section>
+
+<section id="ringkasan-keranjang">
+    <h2>Keranjang dan Ringkasan</h2>
+    <ul id="daftar-keranjang"></ul>
+    <p>Total barang: <span id="total-items">0</span></p>
+    <p>Total poin: <span id="total-poin">0</span></p>
+    <p>Total harga: <span id="total-price">Rp 0</span></p>
+    <button id="btn-checkout" class="btn-checkout" type="button">Pesan Korean Food Sekarang</button>
+</section>
+
+        <section id="kontak">
+            <h2>Lokasi dan Kontak</h2>
+            <p>Alamat: Jl. Contoh No. 1, Yogyakarta</p>
+            <p>Jam buka: setiap hari, 08.00 sampai 17.00</p>
+            <!-- TODO: ganti nomor WhatsApp (format 62..., tanpa tanda +) -->
+            <a class="tombol" href="https://wa.me/6281234567890" target="_blank" rel="noopener">Hubungi lewat WhatsApp</a>
+        </section>
+    </main>
+
+    <footer class="bawah">
+        <div class="wadah">Mini Hackathon Teknologi Web · Nama Kelompok</div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
