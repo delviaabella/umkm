@@ -67,3 +67,39 @@ section { margin-bottom: 40px; }
 @media (max-width: 600px) {
     .hero h1 { font-size: 28px; }
 }
+
+:root {
+    --utama: #f97316;
+    --teks: #111111;
+    --redup: #444444;
+    --latar: #ffffff;
+    --kartu: #ffffff;
+    --garis: #e5e5e5;
+}
+
+.atas {
+    background: linear-gradient(90deg, #f97316, #dc2626);
+}
+
+.hero h1,
+section h2 {
+    color: #dc2626;
+}
+
+.kartu {
+    border-color: #222222;
+}
+
+.kartu .harga {
+    color: #f97316;
+}
+
+.tombol {
+    background: #dc2626;
+}
+
+.bawah {
+    background: #111111;
+    border-top-color: #dc2626;
+    color: #ffffff;
+}

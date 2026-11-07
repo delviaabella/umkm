@@ -8,8 +8,8 @@ const gambarProduk = [
         pin: 'https://id.pinterest.com/pin/1002262092067857793/'
     },
     {
-        url: 'https://i.pinimg.com/236x/e3/7b/ca/e37bca9768ebfb360e805d2c6c7da314.jpg',
-        pin: 'https://id.pinterest.com/pin/251779435414425162/'
+        url: 'https://i.pinimg.com/236x/72/a1/e7/72a1e728432381176b4005629b201b73.jpg',
+        pin: 'https://id.pinterest.com/pin/91268329945781415/'
     },
     {
         url: 'https://i.pinimg.com/236x/54/92/39/5492399baab81493d928b301b690faf4.jpg',
