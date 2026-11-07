@@ -1,0 +1,12 @@
+#daftar-produk a.foto {
+    display: grid;
+    overflow: hidden;
+    text-decoration: none;
+}
+
+#daftar-produk .foto img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

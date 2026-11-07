@@ -1,17 +1,17 @@
 // TODO: ganti dengan produk UMKM kalian. Gambar boleh dikosongkan dulu.
 const produk = [
-    { nama: 'Tteokbokki', harga: 25000, keterangan: 'Keterangan singkat produk.' },
-    { nama: 'Kimbap', harga: 22000, keterangan: 'Keterangan singkat produk.' },
-    { nama: 'Korean Fried Chicken', harga: 35000, keterangan: 'Keterangan singkat produk.' },
-    { nama: 'Korean Corn Dog', harga: 20000, keterangan: 'Keterangan singkat produk.' },
-    { nama: 'Ramyeon', harga: 25000, keterangan: 'Keterangan singkat produk.' },
-    { nama: 'Mandu', harga: 22000, keterangan: 'Keterangan singkat produk.' },
-    { nama: 'Bulgogi', harga: 40000, keterangan: 'Keterangan singkat produk.' },
-    { nama: 'Bibimbap', harga: 35000, keterangan: 'Keterangan singkat produk.' },
-    { nama: 'Japchae', harga: 28000, keterangan: 'Keterangan singkat produk.' },
-    { nama: 'Odeng', harga: 18000, keterangan: 'Keterangan singkat produk.' },
-    { nama: 'Hotteok', harga: 15000, keterangan: 'Keterangan singkat produk.' },
-    { nama: 'Kimchi Jjigae', harga: 32000, keterangan: 'Keterangan singkat produk.' },
+    { nama: 'Tteokbokki', harga: 25000, keterangan: 'Tteokbokki kenyal bersaus pedas manis, bikin hangat dan ketagihan.' },
+    { nama: 'Kimbap', harga: 22000, keterangan: 'Nasi gulung rumput laut dengan isian lezat di setiap gigitan.' },
+    { nama: 'Korean Fried Chicken', harga: 35000, keterangan: 'Ayam renyah berbalut saus khas Korea yang bikin nagih.' },
+    { nama: 'Korean Corn Dog', harga: 20000, keterangan: 'Sosis dan keju berbalut adonan renyah, nikmat selagi hangat.' },
+    { nama: 'Ramyeon', harga: 25000, keterangan: 'Mi kuah hangat dengan rasa gurih dan sentuhan pedas.' },
+    { nama: 'Mandu', harga: 22000, keterangan: 'Pangsit Korea dengan isian gurih dan kulit yang lembut.' },
+    { nama: 'Bulgogi', harga: 40000, keterangan: 'Irisan daging berbumbu manis gurih dengan aroma menggoda.' },
+    { nama: 'Bibimbap', harga: 35000, keterangan: 'Nasi hangat dengan sayuran warna-warni dan saus gochujang.' },
+    { nama: 'Japchae', harga: 28000, keterangan: 'Soun kenyal dengan sayuran dan bumbu gurih khas Korea.' },
+    { nama: 'Odeng', harga: 18000, keterangan: 'Eomuk hangat dengan kuah gurih yang nyaman di perut.' },
+    { nama: 'Hotteok', harga: 15000, keterangan: 'Pancake Korea hangat dengan isian manis yang lumer.' },
+    { nama: 'Kimchi Jjigae', harga: 32000, keterangan: 'Sup kimchi bercita rasa asam pedas, pas disantap hangat.' },
 ];
 
 // TODO: sesuaikan jam buka (format 24 jam)
