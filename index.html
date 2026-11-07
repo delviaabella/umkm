@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>OppaBites</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="product-images.css">
 </head>
 <body>
     <header class="atas">
@@ -53,7 +52,6 @@
     </footer>
 
     <script src="script.js"></script>
-    <script src="product-images.js"></script>
     <script>
         const statusBuka = document.getElementById('status-buka');
 
@@ -75,6 +73,16 @@
 
         perbaruiStatusBuka();
         setInterval(perbaruiStatusBuka, 1000);
+    </script>
+    <script>
+        document.querySelectorAll('.atas nav a[href^="#"]').forEach((tautan) => {
+            tautan.addEventListener('click', () => {
+                document.querySelectorAll('.atas nav a').forEach((item) => {
+                    item.classList.remove('navigasi-aktif');
+                });
+                tautan.classList.add('navigasi-aktif');
+            });
+        });
     </script>
 </body>
 </html>

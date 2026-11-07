@@ -103,3 +103,381 @@ section h2 {
     border-top-color: #dc2626;
     color: #ffffff;
 }
+
+#daftar-produk {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    align-items: stretch;
+}
+
+#daftar-produk .kartu {
+    display: flex;
+    min-width: 0;
+    flex-direction: column;
+}
+
+#daftar-produk .foto {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    flex: none;
+}
+
+#daftar-produk .kartu h3 {
+    min-height: 2.8em;
+}
+
+#daftar-produk .kartu p:not(.harga) {
+    min-height: 4.5em;
+}
+
+#daftar-produk .kartu .harga {
+    margin-top: auto;
+}
+
+@media (max-width: 800px) {
+    #daftar-produk {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 600px) {
+    #daftar-produk {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 380px) {
+    #daftar-produk {
+        grid-template-columns: 1fr;
+    }
+}
+
+#daftar-produk .kartu:nth-child(3) .foto img {
+    object-position: center 35%;
+}
+
+.bawah {
+    background: #f97316;
+    border-top-color: #f97316;
+    color: #ffffff;
+    text-align: center;
+}
+
+body:has(#tentang:target) .atas nav a[href="#tentang"],
+body:has(#produk:target) .atas nav a[href="#produk"],
+body:has(#kontak:target) .atas nav a[href="#kontak"] {
+    color: #111111;
+    font-weight: 700;
+}
+
+.atas nav a:active,
+.atas nav a:focus-visible {
+    color: #111111;
+}
+
+body:has(#tentang:target) .atas nav a[href="#tentang"]:not(.navigasi-aktif),
+body:has(#produk:target) .atas nav a[href="#produk"]:not(.navigasi-aktif),
+body:has(#kontak:target) .atas nav a[href="#kontak"]:not(.navigasi-aktif),
+body .atas nav a:focus-visible:not(.navigasi-aktif) {
+    color: #ffffff;
+    font-weight: 400;
+}
+
+body .atas nav a.navigasi-aktif {
+    color: #111111;
+    font-weight: 700;
+}
+
+#daftar-produk a.foto {
+    display: grid;
+    overflow: hidden;
+    text-decoration: none;
+}
+
+#daftar-produk .foto img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#daftar-produk .kartu:nth-child(3) .foto {
+    height: 246px;
+    aspect-ratio: auto;
+    overflow: hidden;
+}
+
+@media (max-width: 600px) {
+    #daftar-produk .kartu:nth-child(3) .foto {
+        height: 200px;
+    }
+}
+
+#daftar-produk .kartu:nth-child(3) .foto {
+    height: auto;
+    aspect-ratio: 4 / 5;
+}
+
+#daftar-produk .foto,
+#daftar-produk .kartu:nth-child(3) .foto {
+    height: auto;
+    aspect-ratio: 4 / 3;
+}
+
+#daftar-produk .foto {
+    position: relative;
+    display: block;
+    width: 100%;
+    overflow: hidden;
+}
+
+#daftar-produk .foto img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.tombol-pesan {
+    width: 100%;
+    margin-top: 12px;
+    padding: 10px 12px;
+    border: 0;
+    border-radius: 6px;
+    background: #f97316;
+    color: #ffffff;
+    font: inherit;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.tombol-pesan:hover,
+.keranjang-checkout:hover {
+    background: #dc2626;
+}
+
+#keranjang-pesanan {
+    margin: 24px 0 40px;
+    padding: 20px;
+    border: 1px solid var(--garis);
+    border-radius: 8px;
+    background: var(--kartu);
+    scroll-margin-top: 20px;
+}
+
+#keranjang-pesanan h2 {
+    margin-top: 0;
+    color: #dc2626;
+}
+
+.keranjang-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 12px 0;
+    border-bottom: 1px solid var(--garis);
+}
+
+.keranjang-item-info {
+    min-width: 0;
+}
+
+.keranjang-item-info p {
+    margin: 4px 0 0;
+    color: var(--redup);
+}
+
+.keranjang-kontrol {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.keranjang-kontrol button {
+    min-width: 32px;
+    min-height: 32px;
+    border: 1px solid var(--garis);
+    border-radius: 5px;
+    background: #ffffff;
+    cursor: pointer;
+}
+
+.keranjang-total {
+    margin: 16px 0;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: right;
+}
+
+.keranjang-checkout {
+    display: inline-block;
+    padding: 10px 16px;
+    border-radius: 6px;
+    background: #f97316;
+    color: #ffffff;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.keranjang-checkout[hidden] {
+    display: none;
+}
+
+@media (max-width: 480px) {
+    #keranjang-pesanan {
+        padding: 14px;
+    }
+
+    .keranjang-item {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .keranjang-kontrol {
+        align-self: flex-end;
+    }
+}
+
+#keranjang-pesanan {
+    border-color: #222222;
+}
+
+.atas .wadah {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.merek {
+    font-size: 26px;
+}
+
+.atas nav {
+    gap: 24px;
+}
+
+.atas nav a {
+    font-size: 18px;
+}
+
+@media (max-width: 600px) {
+    .atas .wadah {
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
+
+    .merek {
+        font-size: 22px;
+    }
+
+    .atas nav {
+        gap: 16px;
+    }
+
+    .atas nav a {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 600px) {
+    main.wadah > .hero,
+    main.wadah > #tentang {
+        padding: 14px;
+        background: #fff3e0;
+    }
+
+    main.wadah > .hero {
+        margin-bottom: 0;
+        border-radius: 10px 10px 0 0;
+    }
+
+    main.wadah > #tentang {
+        margin-bottom: 28px;
+        border-radius: 0 0 10px 10px;
+    }
+}
+
+@media (max-width: 380px) {
+    main.wadah > .hero,
+    main.wadah > #tentang {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 600px) {
+    .atas .wadah {
+        align-items: stretch;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .merek {
+        text-align: center;
+    }
+
+    .atas nav {
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    main.wadah {
+        padding: 24px 12px 36px;
+    }
+
+    #daftar-produk {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+    }
+
+    #daftar-produk .kartu {
+        padding: 12px;
+    }
+
+    #daftar-produk .kartu h3 {
+        font-size: 16px;
+    }
+
+    #daftar-produk .kartu p:not(.harga) {
+        font-size: 14px;
+    }
+
+    .tombol-pesan {
+        padding: 9px 6px;
+        font-size: 14px;
+    }
+
+    #keranjang-pesanan {
+        padding: 14px;
+    }
+}
+
+@media (max-width: 380px) {
+    #daftar-produk {
+        grid-template-columns: 1fr;
+    }
+
+    #daftar-produk .kartu {
+        padding: 16px;
+    }
+
+    #daftar-produk .kartu h3 {
+        font-size: 18px;
+    }
+
+    #daftar-produk .kartu p:not(.harga) {
+        font-size: 16px;
+    }
+
+    .tombol-pesan {
+        padding: 10px 12px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 600px) {
+    main.wadah > .hero,
+    main.wadah > #tentang {
+        background: #ffffff;
+    }
+}
